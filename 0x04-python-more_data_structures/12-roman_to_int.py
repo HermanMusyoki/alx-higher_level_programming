@@ -13,4 +13,3 @@ def roman_to_int(roman_string: str):
             _integers -= numbers[m]
 
     return _integers
-
