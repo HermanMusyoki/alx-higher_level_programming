@@ -6,7 +6,7 @@ class Rectangle:
     """Rectangle representation
 
     Attributes:
-        number_of_instances (int): The total number of Rectangle instances.
+        number_of_instances (int): The total number of rectangle instances.
         print_symbol (any): String representation symbol
     """
 
@@ -62,13 +62,13 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Return from given rectangles the one with greatest area.
+        """Return the rectangle with the greater area after comparison
 
         Args:
-            rect_1 (Rectangle): The first rectangle to compare
-            rect_2 (Rectangle): The second rectangle to compare
+            rect_1 (Rectangle): The first Rectangle to compare
+            rect_2 (Rectangle): The second Rectangle to compare.
         Raises:
-            TypeError: If either of rect_1 or rect_2 is not a rectangle.
+            TypeError: If either of rect_1 or rect_2 is not a Rectangle.
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -78,8 +78,17 @@ class Rectangle:
             return (rect_1)
         return (rect_2)
 
+    @classmethod
+    def square(cls, size=0):
+        """Return a new Rectangle with width = height = size.
+
+        Args:
+            size (int): new Rectangle width and height
+        """
+        return (cls(size, size))
+
     def __str__(self):
-        """Return the printable rectangle representation
+        """Return the printable rectangle  representation
 
         Use # character to represent the rectangle
         """
@@ -94,7 +103,7 @@ class Rectangle:
         return ("".join(rect))
 
     def __repr__(self):
-        """Return rectangle string representation"""
+        """Return the rectangle string representation"""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
