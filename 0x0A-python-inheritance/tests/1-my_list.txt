@@ -37,10 +37,10 @@ NameError: name 'my_list2' is not defined
 
 case 3: passed a list
 
->>> a = [1, 9, 4]
+>>> a = [2, 9, 5]
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
-[1, 4, 9]
+[2, 5, 9]
 >>>
 
 -------------------------------------------
@@ -94,11 +94,11 @@ case 8: negative numbers
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> my_list.append(5)
+>>> my_list.append(7)
 >>> my_list.append(1)
 >>> my_list.append(-1)
->>> my_list.append(51)
->>> my_list.append(-5)
+>>> my_list.append(56)
+>>> my_list.append(-4)
 >>> my_list.print_sorted()
-[-5, -1, 1, 5, 51]
+[-4, -1, 1, 7, 56]
 >>>
