@@ -13,7 +13,7 @@ class BaseGeometry:
         """Check a value as an integer.
 
         Args:
-            name (str): the name of value 
+            name (str): the name of value
             value (int): The parameter to be checked.
         Raises:
             TypeError: If value is not an integer
