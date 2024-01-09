@@ -8,6 +8,6 @@ arglist = list(sys.argv[1:])
 try:
     items = load_from_json_file("add_item.json")
 except FileNotFoundError:
-items = []
+    items = []
 items.extend(arglist)
 save_to_json_file(items, "add_item.json")
