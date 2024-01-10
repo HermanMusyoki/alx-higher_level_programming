@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Defines a function to find the max integer in a list
+"""Module to find the max integer in a list
 """
 
 
 def max_integer(list=[]):
-    """Return the max integer in a list of integers
-        for an empty list return NONE
+    """Function to find and return the max integer in a list of integers
+        If the list is empty, the function returns None
     """
     if len(list) == 0:
         return None
