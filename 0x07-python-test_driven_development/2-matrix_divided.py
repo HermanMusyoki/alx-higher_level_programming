@@ -3,7 +3,7 @@
 
 
 def matrix_divided(matrix, div):
-    """Divide matrix elements 
+    """Divide matrix elements
 
     Args:
         matrix (list): A matrix of ints or floats.
