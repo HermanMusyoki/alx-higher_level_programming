@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// lorem ipsum
+// Loripsum
 
 const request = require('request');
 const fs = require('fs');
